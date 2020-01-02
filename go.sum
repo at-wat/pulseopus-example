@@ -1,4 +1,4 @@
-github.com/at-wat/pulse v0.0.0-20200102134042-4b1a11590c26 h1:0uznuFcMpqfIldEfdlfPGK+pFNoTIaEp/VxqhsHubfc=
-github.com/at-wat/pulse v0.0.0-20200102134042-4b1a11590c26/go.mod h1:cpYspI6YljhkUf1WLXLLDmeaaPFc3CnGLjDZf9dZ4no=
+github.com/jfreymuth/pulse v0.0.0-20200102165227-0adaf0e8fedf h1:cVCHHOCFN2qpM4EZ41oBjUU6Gi2t2eCkAAdtRSshRz4=
+github.com/jfreymuth/pulse v0.0.0-20200102165227-0adaf0e8fedf/go.mod h1:cpYspI6YljhkUf1WLXLLDmeaaPFc3CnGLjDZf9dZ4no=
 gopkg.in/hraban/opus.v2 v2.0.0-20191117073431-57179dff69a6 h1:DijXYaSrpXmncjuTa+puGa28trQ8+jphcUJk3N9PzGY=
 gopkg.in/hraban/opus.v2 v2.0.0-20191117073431-57179dff69a6/go.mod h1:/L5E7a21VWl8DeuCPKxQBdVG5cy+L0MRZ08B1wnqt7g=
