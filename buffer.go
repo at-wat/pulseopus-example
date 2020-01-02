@@ -6,18 +6,16 @@ import (
 
 type buffer struct {
 	b  []int16
-	mu sync.Mutex
+	mu sync.RWMutex
 }
 
 func (b *buffer) Read(p []int16) {
 	b.mu.Lock()
+	defer b.mu.Unlock()
 	if len(b.b) > len(p) {
 		copy(p, b.b[:len(p)])
 		b.b = b.b[len(p):]
-		b.mu.Unlock()
-		return
 	}
-	b.mu.Unlock()
 }
 
 func (b *buffer) Write(p []int16) {
@@ -27,7 +25,7 @@ func (b *buffer) Write(p []int16) {
 }
 
 func (b *buffer) Len() int {
-	b.mu.Lock()
-	defer b.mu.Unlock()
-	return len(b.b)
+	b.mu.RLock()
+	defer b.mu.RUnlock()
+	return len(b.b[:])
 }
